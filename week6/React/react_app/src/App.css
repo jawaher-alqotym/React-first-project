@@ -1,0 +1,157 @@
+* {margin: 0px;
+   padding: 0px;
+   scroll-behavior: smooth;
+   overflow-x: hidden;
+ }
+
+.container_one {
+  width:100%;
+  background-color: #964B00;
+  height:auto;
+  color: white;
+
+}
+
+img {width:100%;
+     height:40vh;}
+
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  }
+
+ul {
+  list-style-type: none;
+  color: white;
+  margin-top: 1rem;
+  padding: 0;
+  overflow: hidden;}
+
+li {
+  float: left;
+  margin-left:1rem;
+}
+
+li a {
+  display: block;
+  text-align: center;
+  text-decoration: none;
+  color: white;
+}
+
+.container_two {
+  background: rgb(150,75,0);
+  background: linear-gradient(180deg, rgba(150,75,0,1) 0%, rgba(150,75,0,1) 45%, rgba(255,255,255,1) 45%);
+  display:flex;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+  padding:2rem;
+
+ }
+
+.container_two::-webkit-scrollbar{
+  width:0px;}
+
+.container_two {
+  -webkit-overflow-scrolling: touch;
+}
+
+.item {
+  flex: 0 0 auto;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  border-radius:20px;
+  max-width: 330px;
+  min-width: 330px;
+  margin:2rem;
+}
+
+.item p {margin:1rem;}
+
+.item button {
+  border:0px;
+  outline: 0;
+  padding: 12px;
+  color: white;
+  background-color:#007194;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  font-size: 18px;
+}
+
+.title {text-align:center;}
+
+.pargraph { text-align: right;
+            overflow: hidden;}
+
+.footer {
+         box-shadow: 0px 4px 7px 8px rgba(0, 0, 0, 0.2);
+         background-color: #007194;
+         margin-top:4rem;
+         padding:3rem;
+         text-align:center;
+         color:white;}
+
+
+.typewriter h1 {
+  width:300px;
+  padding-top:2rem;
+  margin-left:auto;
+  margin-right:auto;
+  color: #fff;
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  border-right: .15em solid white; /* The typwriter cursor */
+  white-space: nowrap; /* Keeps the content on a single line */
+  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+  letter-spacing: .15em; /* Adjust as needed */
+  animation:
+    typing 3.5s steps(30, end),
+    blink-caret .5s step-end infinite;
+}
+
+/* The typing effect */
+@keyframes typing {
+  from { width: 0 }
+  to { width: 300px }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: white }
+}
+
+@media (max-width: 400px) {
+  .item {
+  max-width: 300px;
+  min-width: 300px;
+  }
+}
+
+@media (max-width: 331px) {
+.typewriter h1 {
+  width:200px;
+  font-size:23px;
+}
+/* The typing effect */
+@keyframes typing {
+  from { width: 0 }
+  to { width: 200px }
+}
+}
+
+@media (max-width: 300px) {
+  .item {
+  max-width: 250px;
+  min-width: 250px;
+  }
+}
+
+@media (max-width: 240px) {
+  .item {
+  max-width: 220px;
+  min-width: 220px;
+  }
+}
